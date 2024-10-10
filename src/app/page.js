@@ -3,22 +3,17 @@ import { Canvas } from "@react-three/fiber";
 import React from "react";
 
 import Toys from "./components/Toys";
+import Quality from "./components/Quality";
+import Page2 from "./components/Page2";
 
 const page = () => {
   return (
-    <div className="w-full h-screen bg-[#F7F1EC] relative ">
-      <div className="absolute px-10 py-4 top-1/2 left-[3vw] text-black z-[20] flex items-center justify-center  rounded-full bg-transparent  ">
-        <h1
-          className="text-lg
-          bg-white rounded-full "
-        >
-          {" "}
-          Premium Toys
-        </h1>
-      </div>
+    <div className="w-full h-[85vh] sm:h-screen font-['Bayon'] bg-[#F7F1EC] relative ">
+      <Quality />
       <Canvas>
         <Toys />
       </Canvas>
+      <Page2 />
     </div>
   );
 };

@@ -39,7 +39,13 @@ export default function Toys(props) {
       />
       <ambientLight intensity={0.3} />
       <directionalLight args={[0, 3, 3]} intensity={1} color={"white"} />
-      <group {...props} dispose={null} position={[0, -0.5, 0]} scale={0.03}>
+      <group
+        {...props}
+        style={{ zIndex: 5 }}
+        dispose={null}
+        position={[0, -0.5, 0]}
+        scale={0.03}
+      >
         <group rotation={[0.3, 0.2, 0]}>
           <group rotation={[0, 0, 0]}>
             <mesh
